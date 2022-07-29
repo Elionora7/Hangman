@@ -58,13 +58,6 @@ class Hangman extends Component {
       </button>
     ));
   }
-   checkMaxWrongGuesses(){
-     let exceedMax = false;
-     if(this.state.nWrong >= this.props.maxGuesses)
-       exceedMax =  true;
-
-      return exceedMax; 
-   }
 
    reset() {
     this.setState({
